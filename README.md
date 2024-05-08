@@ -1,5 +1,8 @@
 # MacroKata
 
+> [!NOTE]
+> This is my (BionicMushroom's) fork of [MacroKata](https://github.com/tfpk/macrokata). It contains my solutions to the provided exercises. Before you look at the solutions, have a go at solving the exercises by yourself!
+
 Welcome to MacroKata, a set of exercises which you can use to learn how to write
 macros in Rust. When completing each task, there are three goals:
 
