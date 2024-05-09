@@ -10,9 +10,21 @@ fn print_hashmap<K: Debug, V: Debug>(hashmap: &HashMap<K, V>) {
 }
 ////////// DO NOT CHANGE ABOVE HERE /////////
 
-// TODO: Create a `pair!()` macro.
+// Create a `pair!()` macro.
+macro_rules! pair {
+    ($x:expr => $y:expr) => {
+        ($x, $y)
+    };
+}
 
-// TODO: Create a `hashmap!()` macro that uses the `pair!()` macro.
+// Create a `hashmap!()` macro that uses the `pair!()` macro.
+macro_rules! hashmap {
+    ($($key:expr => $value:expr),* $(,)?) => {
+        {
+            HashMap::from([$(pair!($key => $value)),*])
+        }
+    };
+}
 
 ////////// DO NOT CHANGE BELOW HERE /////////
 

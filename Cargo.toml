@@ -89,6 +89,14 @@ name = "10_macros_calling_macros_soln"
 path = "exercises/10_macros_calling_macros/solutions/main.rs"
 
 [[bin]]
+name = "10_macros_calling_macros_archive"
+path = "exercises/10_macros_calling_macros/archive/main.rs"
+
+[[bin]]
+name = "10_macros_calling_macros_archive_soln"
+path = "exercises/10_macros_calling_macros/archive/solutions/main.rs"
+
+[[bin]]
 name = "11_macro_recursion"
 path = "exercises/11_macro_recursion/main.rs"
 

@@ -1,4 +1,15 @@
-// TODO: Create the `curry!()` macro.
+// Create the `curry!()` macro.
+macro_rules! curry {
+    (_, $code:block) => {
+        $code
+    };
+    (($i:ident: $t:ty) => $($rest:tt)+) => {
+        move |$i: $t| {
+            print_curried_argument($i);
+            curry!($($rest)+)
+        }
+    }
+}
 
 ////////// DO NOT CHANGE BELOW HERE /////////
 
